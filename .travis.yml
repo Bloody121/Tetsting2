@@ -11,20 +11,20 @@ addons:
       secure: $SONAR_TOKEN
       
 script:
-  - echo 'TEST' > input.txt 
-  - ( echo 'TEST' && echo 'TEST STRING' && echo 'HELLO' ) > long.txt
   - qmake
   - make
   - ./tests/tests
+  - echo 'TEST' > input.txt 
+  - ( echo 'TEST' && echo 'TEST STRING' && echo 'HELLO' ) > long.txt
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
   - sonar-scanner
- 
- cache:
+  
+cache:
   directories:
     - '$HOME/.sonar/cache'
-    
+  
 notifications:
   email: false
