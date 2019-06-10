@@ -16,7 +16,7 @@ void shownonempty(text txt)
 static void shownonempty_line(int index, char* contents, int cursor, void* data)
 {
     /* Функция обработчик всегда получает существующую строку*/
-    assert(contents != NULL);
+    //assert(contents != NULL);
 
     /* Декларируем неиспользуемые параметры*/
     UNUSED(data);
