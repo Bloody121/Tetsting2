@@ -30,7 +30,7 @@ void show(text txt)
 static void show_line(int index, char *contents, int cursor, void *data)
 {
     /* Функция обработчик всегда получает существующую строку */
-    assert(contents != NULL);
+    //assert(contents != NULL);
 
     /* Декларируем неиспользуемые параметры */
     UNUSED(index);
