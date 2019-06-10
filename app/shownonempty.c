@@ -25,7 +25,7 @@ static void shownonempty_line(int index, char* contents, int cursor, void* data)
 
     if ((contents[0])!='\0') 
     { 
-	    int kek = 1;
+	
 	int i; 
 /* Посимвольная обработка строки */ 
 	int length = strlen(contents); 
