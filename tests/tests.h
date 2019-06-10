@@ -13,13 +13,10 @@ extern "C" {
 
 using namespace testing;
 
-TEST(test0, editortests)
-{
-    text txt= create_text();
-    show(txt);
-    shownonempty(txt);
-
-    EXPECT_DEATH(append_line(txt, txt->end->contents), "");
+TEST(test0, tests) 
+{ 
+text txt; 
+EXPECT_DEATH(shownonempty(txt), ""); 
 }
 
     // Объект структуры создался?
