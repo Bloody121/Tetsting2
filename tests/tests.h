@@ -166,7 +166,7 @@ TEST(test18, tests)
 { 
     text txt = create_text(); 
     load(txt, "long.txt"); 
-    m(txt, 1, 1); 
+    m(txt, 1, 3); 
     show(txt);
    
     EXPECT_EQ(output_line[cursor], '|');
