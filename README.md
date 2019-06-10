@@ -1,3 +1,5 @@
 [![Build Status](https://travis-ci.com/Bloody121/Tetsting2.svg?branch=master)](https://travis-ci.com/Bloody121/Tetsting2)
 [![Coverage Status](https://coveralls.io/repos/github/Bloody121/Tetsting2/badge.svg)](https://coveralls.io/github/Bloody121/Tetsting2)
-
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Bloody121_Tetsting2&metric=bugs)](https://sonarcloud.io/dashboard?id=Bloody121_Tetsting2)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Bloody121_Tetsting2&metric=code_smells)](https://sonarcloud.io/dashboard?id=Bloody121_Tetsting2)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Bloody121_Tetsting2&metric=alert_status)](https://sonarcloud.io/dashboard?id=Bloody121_Tetsting2)
