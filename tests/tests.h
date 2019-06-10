@@ -100,7 +100,7 @@ TEST(test10, tests)
     EXPECT_EQ(txt->begin, nullptr);
     EXPECT_EQ(txt->end, nullptr);
 }
-    // Возможно удалить текущую строку из пустого текста?
+    // Возможно удалить все строки из текста?
 TEST(test11, tests)
 {
     text txt = create_text();
@@ -110,7 +110,7 @@ TEST(test11, tests)
     EXPECT_NE(txt, nullptr);
     EXPECT_EQ(txt->length, 0);
 }
-    // Возможно удалить все строки из текста?
+        // Возможно удалить все строки из пустого текста?
 TEST(test12, tests)
 {
     text txt = nullptr;
@@ -118,7 +118,7 @@ TEST(test12, tests)
 
     EXPECT_EQ(txt, nullptr);
 }
-    // Возможно удалить все строки из пустого текста?
+    // Возможно переместить курсор на данную позицию?
 TEST(test13, tests)
 {
     text txt = create_text();
@@ -127,7 +127,7 @@ TEST(test13, tests)
 
     EXPECT_EQ(txt->cursor->position, 5);//5
 }
-    // Возможно переместить курсор на данную позицию?
+    // Возможно переместить курсор на позицию с отрицательными координатами?
 TEST(test14, tests)
 {
     text txt = create_text();
@@ -136,7 +136,7 @@ TEST(test14, tests)
 
     EXPECT_EQ(txt->cursor->position, 5);
 }
-    // Возможно переместить курсор на позицию с отрицательными координатами?
+    // Возможно переместить курсор в начало текущего слова?
 TEST(test15, editortests)
 {
     text txt = create_text();
