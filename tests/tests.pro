@@ -38,5 +38,7 @@ SOURCES += \
         ../app/text/process_forward.c \
         ../app/text/remove_all.c \
         main.cpp
+        
+INCLUDEPATH += ../app
 
 DISTFILES +=
