@@ -132,7 +132,7 @@ TEST(test14, tests)
     load(txt, "input.txt");
     m(txt, 0, 2);
 
-    EXPECT_EQ(txt->cursor->position, 5);
+    EXPECT_EQ(txt->cursor->position, 0);//5
 }
 
 TEST(test15, tests)
@@ -141,7 +141,7 @@ TEST(test15, tests)
     load(txt, "input.txt");
     m(txt, -1, -1);
 
-    EXPECT_EQ(txt->cursor->position, 5);
+    EXPECT_EQ(txt->cursor->position, 0);
 }
 
 TEST(test16, editortests)
@@ -150,5 +150,5 @@ TEST(test16, editortests)
     load(txt, "input.txt");
     mwbb(txt);
 
-    EXPECT_EQ(txt->cursor->position, 5);
+    EXPECT_EQ(txt->cursor->position, 0);
 }
