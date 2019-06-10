@@ -11,11 +11,11 @@ addons:
       secure: $SONAR_TOKEN
       
 script:
+  - echo 'TEST' > input.txt 
+  - ( echo 'TEST' && echo 'TEST STRING' && echo 'HELLO' ) > long.txt
   - qmake
   - make
   - ./tests/tests
-  - echo 'TEST' > input.txt 
-  - ( echo 'TEST' && echo 'TEST STRING' && echo 'HELLO' ) > long.txt
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
