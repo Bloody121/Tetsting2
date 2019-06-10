@@ -165,7 +165,9 @@ EXPECT_EQ(txt->cursor->position, 1);
 
 TEST(test18, tests) 
 { 
-text txt = create_text(); 
+text txt = create_text();
+load(txt,"long.txt");
+    const char* contents[0]="1";
 shownonempty(txt); 
-EXPECT_EQ(txt->length, 0); 
+EXPECT_EQ(kek, 1); 
 }
