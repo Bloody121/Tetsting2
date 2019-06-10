@@ -7,7 +7,7 @@ CONFIG += thread
 CONFIG -= qt
 
 QMAKE_CXXFLAGS += -Wall -Wextra -std=c++11
-QMAKE_CFLAGS += -Wall -Wextra
+QMAKE_CFLAGS += -Wall -Wextra -std=c99
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
