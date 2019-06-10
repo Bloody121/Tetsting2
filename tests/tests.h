@@ -170,5 +170,5 @@ load(txt, "long.txt");
 const char* contents[0]="1";
 shownonempty(txt);
 
-EXPECT_EQ(txt->lenght, strlen(contents));
+EXPECT_EQ(txt->length, strlen(contents));
 }
