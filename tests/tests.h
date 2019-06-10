@@ -154,12 +154,11 @@ TEST(test16, tests)
     EXPECT_DEATH(rc(txt), "");
 }
 
-TEST(test18, tests) 
+TEST(test17, tests) 
 { 
-    text txt = create_text(); 
-    load(txt, "long.txt"); 
-    m(txt, 1, 3); 
-    show(txt);
-   
-    EXPECT_EQ(output_line[cursor], '|');
+text txt = create_text(); 
+load(txt, "long.txt"); 
+txt->cursor->position = 1; 
+show(txt); 
+EXPECT_EQ(txt->cursor->position, 1); 
 }
