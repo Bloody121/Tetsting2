@@ -5,9 +5,8 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG += thread
 CONFIG -= qt
-CONFIG += c99
 
-QMAKE_CXXFLAGS += -Wall -Wextra
+QMAKE_CXXFLAGS += -Wall -Wextra -std=c++11
 QMAKE_CFLAGS += -Wall -Wextra
 
 # gcov
