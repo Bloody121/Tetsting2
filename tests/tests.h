@@ -163,12 +163,9 @@ show(txt);
 EXPECT_EQ(txt->cursor->position, 1); 
 }
 
-TEST(test19, tests)
-{
-text txt = create_text();
-load(txt, "long.txt");
-const char* contents[0]="1";
-shownonempty(txt);
-
-EXPECT_EQ(txt->length, strlen(contents));
+TEST(test18, tests) 
+{ 
+text txt = create_text(); 
+shownonempty(txt); 
+EXPECT_EQ(txt->length, 0); 
 }
