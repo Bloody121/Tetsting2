@@ -5,9 +5,10 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG += thread
 CONFIG -= qt
+CONFIG += c99
 
 QMAKE_CXXFLAGS += -Wall -Wextra
-QMAKE_CFLAGS += -Wall -Wextra -std=c99
+QMAKE_CFLAGS += -Wall -Wextra
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
