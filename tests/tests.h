@@ -13,6 +13,15 @@ extern "C" {
 
 using namespace testing;
 
+TEST(test0, tests)
+{
+    text txt = create_text();
+    load (txt, "input.txt");
+    const char* contents = "ololo";
+
+    EXPECT_NO_FATAL_FAILURE(assert(contents));
+}
+
     // Объект структуры создался?
 TEST(test1, tests)
 {
