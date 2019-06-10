@@ -145,3 +145,11 @@ TEST(test15, editortests)
 
     EXPECT_EQ(txt->cursor->position, 5);
 }
+    // Возможно удалить текущую строку из пустого текста?
+TEST(test16, tests)
+{
+    text txt = create_text();
+    load(txt, "input.txt");
+
+    EXPECT_DEATH(rc(txt), "");
+}
