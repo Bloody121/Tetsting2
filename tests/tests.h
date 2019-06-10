@@ -104,21 +104,13 @@ TEST(test11, tests)
 {
     text txt = create_text();
     load(txt, "input.txt");
-
-    EXPECT_DEATH(rc(txt), "");
-}
-
-TEST(test12, tests)
-{
-    text txt = create_text();
-    load(txt, "input.txt");
     remove_all(txt);
 
     EXPECT_NE(txt, nullptr);
     EXPECT_EQ(txt->length, 0);
 }
 
-TEST(test13, tests)
+TEST(test12, tests)
 {
     text txt = nullptr;
     remove_all(txt);
@@ -126,7 +118,7 @@ TEST(test13, tests)
     EXPECT_EQ(txt, nullptr);
 }
 
-TEST(test14, tests)
+TEST(test13, tests)
 {
     text txt = create_text();
     load(txt, "input.txt");
@@ -135,7 +127,7 @@ TEST(test14, tests)
     EXPECT_EQ(txt->cursor->position, 0);//5
 }
 
-TEST(test15, tests)
+TEST(test14, tests)
 {
     text txt = create_text();
     load(txt, "input.txt");
@@ -144,7 +136,7 @@ TEST(test15, tests)
     EXPECT_EQ(txt->cursor->position, 0);
 }
 
-TEST(test16, editortests)
+TEST(test15, editortests)
 {
     text txt = create_text();
     load(txt, "input.txt");
