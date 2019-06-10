@@ -13,12 +13,15 @@ extern "C" {
 
 using namespace testing;
 
-/*TEST(test0, tests) 
+TEST(test0, tests) 
 { 
-text txt; 
-EXPECT_DEATH(shownonempty(txt), ""); 
+    text txt = create_text(); 
+    load(txt, "long.txt"); 
+    m(txt, 1, 1); 
+    show(txt); 
+    
+    EXPECT_EQ(txt->cursor, 1);
 }
-*/
 
     // Объект структуры создался?
 TEST(test1, tests)
@@ -168,5 +171,13 @@ TEST(test17, tests)
     m(txt, 0, 0);
 
     EXPECT_FALSE(txt->cursor->position & 0);
-
+}
+TEST(test18, tests) 
+{ 
+    text txt = create_text(); 
+    load(txt, "long.txt"); 
+    m(txt, 1, 1); 
+    show(txt);
+   
+    EXPECT_EQ(output_line[cursor], '|');
 }
