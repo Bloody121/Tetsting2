@@ -5,6 +5,8 @@ before_install:
   - pip install --user cpp-coveralls
       
 script:
+  - echo 'TEST' > input.txt 
+  - ( echo 'TEST' && echo 'TEST STRING' && echo 'HELLO' ) > long.txt
   - qmake
   - make
   - ./tests/tests
