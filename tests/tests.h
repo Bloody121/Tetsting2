@@ -15,8 +15,10 @@ using namespace testing;
 
 TEST(test0, editortests)
 {
-    text txt;
-    char* contents = "";
+    text txt= create_text();
+    show(txt);
+    shownonempty(txt);
+
     EXPECT_DEATH(append_line(txt, txt->end->contents), "");
 }
 
