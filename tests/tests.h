@@ -13,11 +13,12 @@ extern "C" {
 
 using namespace testing;
 
-TEST(test0, tests) 
+/*TEST(test0, tests) 
 { 
 text txt; 
 EXPECT_DEATH(shownonempty(txt), ""); 
 }
+*/
 
     // Объект структуры создался?
 TEST(test1, tests)
