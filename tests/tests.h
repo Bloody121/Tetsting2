@@ -13,13 +13,10 @@ extern "C" {
 
 using namespace testing;
 
-TEST(test0, tests)
+TEST(test0, editortests)
 {
-    text txt = create_text();
-    load (txt, "input.txt");
-    const char* contents = "ololo";
-
-    EXPECT_NO_THROW(assert(contents));
+    text txt;
+    EXPECT_DEATH(append_line(txt, txt->begin->contents), "");
 }
 
     // Объект структуры создался?
