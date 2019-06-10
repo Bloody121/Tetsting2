@@ -16,7 +16,8 @@ using namespace testing;
 TEST(test0, editortests)
 {
     text txt;
-    EXPECT_DEATH(append_line(txt, txt->begin->contents), "");
+    char* contents = "";
+    EXPECT_DEATH(append_line(txt, txt->end->contents), "");
 }
 
     // Объект структуры создался?
