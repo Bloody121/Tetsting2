@@ -13,16 +13,6 @@ extern "C" {
 
 using namespace testing;
 
-TEST(test0, tests) 
-{ 
-    text txt = create_text(); 
-    load(txt, "long.txt"); 
-    m(txt, 1, 1); 
-    show(txt); 
-    
-    EXPECT_EQ(txt->cursor, 1);
-}
-
     // Объект структуры создался?
 TEST(test1, tests)
 {
