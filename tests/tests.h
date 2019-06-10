@@ -19,7 +19,7 @@ TEST(test0, tests)
     load (txt, "input.txt");
     const char* contents = "ololo";
 
-    EXPECT_NO_FATAL_FAILURE(assert(contents));
+    EXPECT_NO_THROW(assert(contents));
 }
 
     // Объект структуры создался?
