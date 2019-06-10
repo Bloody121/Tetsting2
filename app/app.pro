@@ -2,7 +2,6 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
-CONFIG += c99
 
 SOURCES += \
         editor.c \
@@ -27,7 +26,7 @@ HEADERS += \
     text/text.h
 
 
-QMAKE_CFLAGS += -Wall -Wextra
+QMAKE_CFLAGS += -Wall -Wextra -std=gnu99
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs \
