@@ -162,3 +162,13 @@ TEST(test16, tests)
 
     EXPECT_DEATH(rc(txt), "");
 }
+
+TEST(test17, tests)
+{
+    text txt = create_text();
+    load(txt, "input.txt");
+    m(txt, 0, 0);
+
+    EXPECT_FALSE(txt->cursor->position & 0);
+
+}
